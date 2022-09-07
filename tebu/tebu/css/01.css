@@ -1,0 +1,1253 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+/* 设置百分百宽度 */
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 给大盒子添加背景颜色 */
+.box {
+    width: 100%;
+    background-color: rgb(234, 230, 230);
+
+
+}
+
+/* 顶部通栏 */
+.box .dingbu1 {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+/* 设置顶部通栏宽度 */
+.box .dingbu {
+    width: 1200px;
+    margin: auto;
+    height: 30px;
+    /* background-color: aqua; */
+    font: 12px/30px "";
+
+
+}
+
+/* 设置a标签字体颜色 */
+.box .dingbu a {
+    color: black;
+}
+
+/* 设置弹性盒子，左浮动 */
+.box .dingbu .f1 {
+    display: flex;
+    float: left;
+}
+
+/* 设置左右边距 */
+.box .dingbu .dt {
+    padding: 0px 15px;
+}
+
+/* 右浮动 */
+.box .dingbu .fr {
+    display: flex;
+    float: right;
+}
+
+.box .dingbu .f1 .fore1 {
+    display: flex;
+}
+
+.box .dingbu .f1 .fore1 a:hover {
+    color: red;
+}
+
+.box .dingbu .fr a:hover {
+    color: red;
+}
+
+/* pc右侧通栏 */
+.box .chenlan {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 34px;
+    z-index: 1000;
+    font-size: 12px;
+
+
+}
+
+.chenlan .form4 {
+    display: block;
+    width: 34px;
+    z-index: 1000;
+    height: 510px;
+    background-color: #272727;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.chenlan .form4 span {
+    display: flex;
+    align-items: center;
+    width: 34px;
+
+}
+
+.chenlan .form4 a {
+    font-size: 24px;
+    padding-left: 5px;
+    color: yellow;
+}
+
+.shulll{
+    color: rgb(0, 255, 0);
+    font-size: 14px;
+}
+/* 搜索框 */
+.box .dingbu2 {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.box .dingbu2 .w {
+    width: 1200px;
+    margin: auto;
+}
+
+.box .dingbu2 .w .logo {
+    position: relative;
+    z-index: 12;
+    float: left;
+    width: 290px;
+    height: 60px;
+    padding: 20px 0;
+    margin-left: 110px
+}
+
+.box .dingbu2 .w .search {
+    position: relative;
+    z-index: 11;
+    float: left;
+    width: 462px;
+    margin-top: 25px
+}
+
+.box .dingbu2 .w .search input {
+    float: left;
+    width: 370px;
+    height: 24px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 4px;
+    padding: 4px;
+    border: 1px solid red;
+}
+
+.box .dingbu2 .w .search button {
+    float: left;
+    width: 82px;
+    height: 34px;
+    background: red;
+    line-height: 1px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box .dingbu2 .w .xiaolun {
+
+    float: right;
+    width: 210px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.box .dingbu2 .w .xiaolun .bo {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.box .dingbu2 .w .wengzhi {
+    float: left;
+    width: 462px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: "宋体";
+    font-size: 12px;
+
+}
+
+.box .dingbu2 .w .wengzhi a {
+
+    color: black;
+}
+
+.box .dingbu2 .w .wengzhi a:hover {
+
+    color: red;
+}
+
+/* 导航栏 */
+.box .daohang {
+    width: 100%;
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 30px;
+    z-index: 6660;
+    flex-direction: column;
+}
+
+.box .zhuangshi {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    margin-bottom: -30px;
+
+
+}
+
+.box .daohang .tboka {
+    top: 30px;
+    width: 1200px;
+    height: 39px;
+    margin: auto;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+
+
+}
+
+/* 二级导航 */
+.box .daohang .tboka .shangping ul {
+    width: 213px;
+    height: 39px;
+    background-color: red;
+    text-align: center;
+
+
+}
+
+.box .daohang .tboka .shangping ul a {
+    display: block;
+    height: 39px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+
+.box .daohang .tboka .shangping ul .qbuerji {
+    display: none;
+    position: absolute;
+    width: 213px;
+    background-color: black;
+    height: auto;
+}
+
+.box .daohang .tboka .shangping ul:hover .qbuerji {
+    display: block;
+}
+
+.box .daohang .tboka .shangping ul .qbuerji b {
+    margin: 10px;
+    float: left;
+    color: #fff;
+}
+
+.box .daohang .tboka .shangping .qbuerji span {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    float: left;
+    margin: 0px 5px;
+    color: #FFFFFF;
+}
+
+.box .daohang .tboka .shangping .qbuerji span a {
+
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font-size: 12px;
+    /* line-height: 15px; */
+}
+
+/* 一级导航 */
+.box .daohang .tboka .erji {
+    width: 987px;
+    height: 39px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 8, 8);
+    align-items: center;
+}
+
+.box .daohang .tboka .erji li {
+    width: 110px;
+    height: 39px;
+
+}
+
+.box .daohang .tboka .erji li a {
+    color: #fff;
+    display: block;
+    line-height: 39px;
+    text-align: center;
+}
+
+.box .daohang .tboka .erji li a:hover {
+    background-color: #FFFFFF;
+    color: #c1111c;
+}
+
+/* 二级导航 */
+.box .daohang .tboka .erji .erji2 {
+    background: #fff;
+    display: none;
+    border: 1px #eee solid;
+    height: 345px;
+    width: 635px;
+    box-shadow: 0 0 3px #ddd;
+    z-index: 99;
+    position: absolute;
+    top: 39px;
+    left: 250px;
+}
+
+.box .daohang .tboka .erji li:hover .erji2 {
+    display: block;
+}
+
+.box .daohang .tboka .erji .erji2 a {
+    float: left;
+    display: block;
+    margin-top: 18px;
+    padding: 0 10px 0 20px;
+
+
+}
+
+.box .daohang .tboka .erji .erji2 ul {
+    float: left;
+    /* padding: 20px 15px 20px 10px; */
+    width: 395px;
+
+}
+
+.box .daohang .tboka .erji .erji2 ul li {
+    width: 395px;
+    height: 30px;
+}
+
+.box .daohang .tboka .erji .erji2 ul li a {
+    color: #333;
+    margin-right: -10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.box .daohang .tboka .erji .erji2 ul li h4 .bbb {
+    width: 98%;
+    height: 20px;
+    float: left !important;
+    color: #b61d1d;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #939393;
+
+}
+
+/* 二级导航 */
+.box .daohang .tboka .erji .erji3 {
+    background: #fff;
+    display: none;
+    border: 1px #eee solid;
+    height: 345px;
+    width: 635px;
+    box-shadow: 0 0 3px #ddd;
+    z-index: 99;
+    position: absolute;
+    top: 39px;
+    left: 450px;
+}
+
+.box .daohang .tboka .erji li:hover .erji3 {
+    display: block;
+}
+
+.box .daohang .tboka .erji .erji3 a {
+    float: left;
+    display: block;
+    margin-top: 18px;
+    padding: 0 10px 0 20px;
+
+
+}
+
+.box .daohang .tboka .erji .erji3 ul {
+    float: left;
+    /* padding: 20px 15px 20px 10px; */
+    width: 395px;
+
+}
+
+.box .daohang .tboka .erji .erji3 ul li {
+    width: 395px;
+    height: 30px;
+}
+
+.box .daohang .tboka .erji .erji3 ul li a {
+    color: #333;
+    margin-right: -10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.box .daohang .tboka .erji .erji3 ul li h4 .bbb {
+    width: 98%;
+    height: 20px;
+    float: left !important;
+    color: #b61d1d;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #939393;
+
+}
+
+/* 二级导航 */
+.box .daohang .tboka .erji .erji4 {
+    background: #fff;
+    display: none;
+    border: 1px #eee solid;
+    height: 345px;
+    width: 635px;
+    box-shadow: 0 0 3px #ddd;
+    z-index: 99;
+    position: absolute;
+    top: 39px;
+    left: 550px;
+}
+
+.box .daohang .tboka .erji li:hover .erji4 {
+    display: block;
+}
+
+.box .daohang .tboka .erji .erji4 a {
+    float: left;
+    display: block;
+    margin-top: 18px;
+    padding: 0 10px 0 20px;
+
+
+}
+
+.box .daohang .tboka .erji .erji4 ul {
+    float: left;
+    /* padding: 20px 15px 20px 10px; */
+    width: 395px;
+
+}
+
+.box .daohang .tboka .erji .erji4 ul li {
+    width: 395px;
+    height: 30px;
+}
+
+.box .daohang .tboka .erji .erji4 ul li a {
+    color: #333;
+    margin-right: -10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.box .daohang .tboka .erji .erji4 ul li h4 .bbb {
+    width: 98%;
+    height: 20px;
+    float: left !important;
+    color: #b61d1d;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #939393;
+
+}
+
+/* 二级导航 */
+.box .daohang .tboka .erji .erji5 {
+    background: #fff;
+    display: none;
+    border: 1px #eee solid;
+    height: 345px;
+    width: 635px;
+    box-shadow: 0 0 3px #ddd;
+    z-index: 99;
+    position: absolute;
+    top: 39px;
+    left: 650px;
+}
+
+.box .daohang .tboka .erji li:hover .erji5 {
+    display: block;
+}
+
+.box .daohang .tboka .erji .erji5 a {
+    float: left;
+    display: block;
+    margin-top: 18px;
+    padding: 0 10px 0 20px;
+
+
+}
+
+.box .daohang .tboka .erji .erji5 ul {
+    float: left;
+    /* padding: 20px 15px 20px 10px; */
+    width: 395px;
+
+}
+
+.box .daohang .tboka .erji .erji5 ul li {
+    width: 395px;
+    height: 30px;
+}
+
+.box .daohang .tboka .erji .erji5 ul li a {
+    color: #333;
+    margin-right: -10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.box .daohang .tboka .erji .erji5 ul li h4 .bbb {
+    width: 98%;
+    height: 20px;
+    float: left !important;
+    color: #b61d1d;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #939393;
+
+}
+
+/* 二级导航 */
+.box .daohang .tboka .erji .erji6 {
+    background: #fff;
+    display: none;
+    border: 1px #eee solid;
+    height: 345px;
+    width: 635px;
+    box-shadow: 0 0 3px #ddd;
+    z-index: 99;
+    position: absolute;
+    top: 39px;
+    left: 750px;
+}
+
+.box .daohang .tboka .erji li:hover .erji6 {
+    display: block;
+}
+
+.box .daohang .tboka .erji .erji6 a {
+    float: left;
+    display: block;
+    margin-top: 18px;
+    padding: 0 10px 0 20px;
+
+
+}
+
+.box .daohang .tboka .erji .erji6 ul {
+    float: left;
+    /* padding: 20px 15px 20px 10px; */
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .daohang .tboka .erji .erji6 ul li {
+    width: 395px;
+    height: 30px;
+}
+
+.box .daohang .tboka .erji .erji6 ul li a {
+    color: #333;
+    margin-right: -10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.box .daohang .tboka .erji .erji6 ul li h4 a {
+    width: 100px;
+    height: 20px;
+    color: #b61d1d;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 4px;
+
+
+
+}
+/* 轮播图1 */
+/*大盒子*/
+.box .lunbotu.lunbo {
+    width: 100%;
+    height: 650px;
+    background-color: pink;
+    position: relative;
+    margin: 50px auto;
+
+}
+
+/*图片大小*/
+.box .lunbotu img {
+    width: 100%;
+    height: 650px;
+}
+
+/* 文本信息
+#text {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "楷体";
+    text-align: center;
+    line-height: 40px;
+    background-color: #40E0D0;
+    opacity: 0.5;
+    color: #000000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+} */
+
+/*左右箭头*/
+.box .lunbotu #left,
+#right {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font: 16px/30px "楷体";
+    text-align: center;
+    position: absolute;
+    background-color: #012925;
+    opacity: 0.5;
+    color: #FFFFFF;
+cursor: pointer;
+}
+
+/*定位信息*/
+.box .lunbotu #left {
+    position: absolute;
+    top: 400px;
+    /* bottom: 3px; */
+    left: 50px;
+    z-index: 3;
+    display: none;
+}
+
+
+
+.box .lunbotu #right {
+    position: absolute;
+    top: 400px;
+    /* bottom: 0px; */
+    right: 50px;
+    z-index: 3;
+    display: none;
+}
+/* 第二个轮播图 */
+.box .lunbotu2 {
+    width: 100%;
+    height: 538px;
+
+}
+
+.box .lunbotu2 .datu {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    left: 0px;
+}
+
+.box .lunbotu2 .datu img {
+    width: 393px;
+    height: 538px;
+}
+/* 动画 */
+.box .dibudonhua {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box .dibudonhua .dontu {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease 0s;
+}
+
+.box .dibudonhua .xiaotu {
+    position: absolute;
+    left: 260px;
+    right: 0px;
+    top: 140px;
+    text-align: center;
+    font-size: 16px;
+    white-space: normal;
+    width: 100%;
+    margin: auto;
+}
+
+.box .dibudonhua .biaodan {
+    position: absolute;
+    top: 242px;
+    left: 0px;
+    right: 230px;
+    width: 800px;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    transform: translateX(50%);
+    height: 56px;
+    z-index: 2;
+}
+
+.box .dibudonhua .biaodan input {
+    width: 700px;
+    float: left;
+    box-sizing: border-box;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    font-size: 20px;
+    height: 56px;
+    color: rgb(31, 31, 31);
+    cursor: auto;
+    font-weight: bold;
+    caret-color: rgb(234, 67, 53);
+    outline: none;
+    background: rgb(255, 255, 255);
+    border-style: none;
+    border-image: initial;
+    border-top: 4px solid transparent;
+    padding: 0px 80px 0px 30px;
+    transition: border-bottom-color 0.3s ease 0s;
+}
+
+.box .dibudonhua .biaodan button {
+    float: left;
+    width: 82px;
+    height: 56px;
+    background: rgb(234, 67, 53);
+    border: none;
+    line-height: 1;
+    color: #fff;
+    font-family: ""Microsoft YaHei"";
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* 底部详情页 1联系方式等 公司简介*/
+.box .shohofuw {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.box .shohofuw .lxi {
+    height: 172px;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.box .shohofuw .lxi dl {
+    display: inline-block;
+    margin: 0;
+    width: 900px;
+    border-right: 1px dashed #ddd;
+    overflow: hidden;
+    float: left;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.box .shohofuw .lxi dl dd {
+
+    display: inline-block;
+    float: left;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .shohofuw .lxi dl dd a {
+    font: 12px/20px "";
+    color: rgb(95, 88, 88);
+}
+
+.box .shohofuw .lxi .jang {
+    float: left;
+    width: 200px;
+    margin: 8px 0 0 50px;
+}
+
+.box .shohofuw .lxi .jang h2 {
+    width: 200px;
+    font-size: 22px;
+    color: #c1111c;
+}
+/* 间隔图片 */
+.box .shohofuw .lxi .jang p {
+    width: 200px;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.box .shohofuw .lxi .jang a {
+    display: block;
+    width: 122px;
+    height: 32px;
+    background: url(http://xtep.com.cn/webcommon/images/yiqigou_w/zxkf1.png) no-repeat;
+    background-size: 100%
+}
+
+.box .hyzx {
+    width: 100%;
+    background-color: black;
+    height: 45px;
+}
+
+.box .hyzx .dibu {
+    width: 1200px;
+    margin: auto;
+    height: 45px;
+}
+/* 底部详情2，备案号等 */
+.box .guangyuteb {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0;
+    margin-top: -6px;
+    color: #939393;
+
+}
+
+.box .guangyuteb a {
+    color: #939393;
+}
+
+.box .guangyuteb .dibutonlang ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box .guangyuteb .aside {
+    padding: 20px 0 50px;
+    margin-top: 25px;
+    border-top: 1px solid #ebebeb;
+    clear: both
+}
+ /* 首页最后的图片 */
+.box .guangyuteb .ww {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 登入页面css样式 */
+.box .zhuche {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    /* 背景图 */
+    background: url(http://login.xtep.com.cn/util/Images/login_bg.jpg) center no-repeat;
+}
+/* 登入样式 */
+.box .zhuche .dengru {
+    padding: 15px;
+    width: 300px;
+    position: absolute;
+    right: 350px;
+    top: 70px;
+    background: #fff;
+    height: 300px;
+    overflow: hidden;
+    color: #9b9b9b;
+}
+
+.box .zhuche .dengru .yonhu {
+    padding: 15px 30px 5px 10px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+}
+
+.box .zhuche .dengru .yonhu a {
+    color: #fe7c31;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 32px;
+    font-family: "微软雅黑";
+}
+/* 账户输入框样式 */
+.box .zhuche .yonhudengrubiaodan .xx1 {
+    width: 260px;
+    margin-left: 10px;
+    height: 29px;
+    border: 1px solid #dcdcdc;
+    line-height: 29px;
+    color: #7a7a7a;
+    text-indent: 24px;
+    border-radius: 3px;
+    background: url(http://login.xtep.com.cn/util/images/newsite/username.gif) no-repeat left;
+}
+/* 密码输入框 */
+.box .zhuche .yonhudengrubiaodan .xx2 {
+    width: 260px;
+    margin-left: 10px;
+    height: 29px;
+    border: 1px solid #dcdcdc;
+    line-height: 29px;
+    color: #7a7a7a;
+    text-indent: 24px;
+    border-radius: 3px;
+    background: url(http://login.xtep.com.cn/util/images/newsite/password.gif) no-repeat left;
+}
+
+.box .zhuche .yonhudengrubiaodan a {
+
+    float: right;
+    color: #666666;
+    margin-right: 30px;
+    margin-bottom: 20px
+}
+/* 登入按钮样式 */
+.box .zhuche .yonhudengrubiaodan button {
+
+    display: inline-block;
+    background: #B61D1D;
+    font-family: "微软雅黑";
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    width: 260px;
+    height: 33px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* 注册样式，背景图 */
+.box .kuaishuzhuche {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background: url(http://login.xtep.com.cn/util/Images/login_bg.jpg) center no-repeat;
+    font-size: 12px;
+    color: #9b9b9b;
+}
+/* 注册栏样式 */
+.box .kuaishuzhuche .zhucheye {
+    border: 3px solid #dcdcdc;
+    z-index: 1000;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    height: 440px;
+    width: 940px;
+
+}
+/* 设置左边样式 */
+.box .kuaishuzhuche .zhucheye .rigth-zhuche {
+    padding: 45px 80px 0px 120px;
+    border-right: 1px solid #dcdcdc;
+    width: 350px;
+    overflow: hidden;
+    height: 400px;
+    float: left;
+
+}
+
+.box .kuaishuzhuche .zhucheye .rigth-zhuche h2 {
+    padding: 15px 30px 5px 10px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+
+}
+/* 设置文字偏移 */
+.box .kuaishuzhuche .zhucheye .rigth-zhuche li {
+    text-align: right;
+}
+/* 设置输入框的大小 */
+.box .kuaishuzhuche .zhucheye .rigth-zhuche input {
+    line-height: 30px;
+    width: 180px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-indent: 6px;
+    color: #444;
+    margin-top: 2px;
+}
+.box .kuaishuzhuche .zhucheye .rigth-zhuche span {
+    line-height: 30px;
+    width: 100px;
+ 
+}
+/* 设置*的样式 */
+.box .kuaishuzhuche .zhucheye .rigth-zhuche i {
+    color: #c40000;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+/* 注册按钮的样式 */
+.box .kuaishuzhuche .zhucheye .rigth-zhuche li button {
+    display: inline-block;
+    background: #B61D1D;
+    font-family: "微软雅黑";
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    width: 260px;
+    height: 33px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* 设置已有账户样式 */
+.box .kuaishuzhuche .zhucheye .bailan {
+    height: 400px;
+    color: #666;
+    margin-left: 600px;
+    margin-top: 60px;
+}
+
+.box .kuaishuzhuche .zhucheye .bailan button {
+    display: inline-block;
+    background: #B61D1D;
+    font-family: "微软雅黑";
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    width: 260px;
+    height: 33px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* 左边列表页css样式 */
+.box .liebiao{
+    margin: 20px auto;
+    position: relative;
+    width: 1200px;
+    display: flex;
+}
+.box .liebiao .left-liebio{
+    width: 210px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+}
+.box .liebiao .left-liebio h3{
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 15px;
+}
+.box .liebiao .left-liebio span{
+    height: 37px;
+    line-height: 38px;
+}
+.box .liebiao .left-liebio .left-xiaoliang li{
+    clear: both;
+    height: 300px;
+    border-bottom: 1px dashed #e2e2e2;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.box .liebiao .left-liebio .left-xiaoliang li .paihan1{
+   background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan1.png);background-size: 100% 100%;
+  
+}
+.box .liebiao .left-liebio .left-xiaoliang li .ph{
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+  
+}
+.box .liebiao .left-liebio .left-xiaoliang .left-con img{
+    width: 180px;
+    
+}
+.box .liebiao .left-liebio .left-xiaoliang .left-xiaoqing {
+    width: 152px;
+    margin: auto;
+    height: 45px;
+    
+}
+.box .liebiao .left-liebio .left-xiaoliang .left-xiaoqing a {
+    text-align: center;
+    color: #696969;
+    height: 35px;
+    overflow: hidden;
+    display: block;
+    font-size: 12px;
+}
+.box .liebiao .left-liebio .left-xiaoliang .con-jiage {
+    color: #e4393c;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 14px;
+    height: 22px;
+    text-align: left;
+}
+.box .liebiao .left-liebio .left-xiaoliang .con-xiaosho {
+    color: #3f3f3f;
+    height: 22px;
+    font-size: 12px;
+    text-align: left;
+}
+.box .liebiao .left-liebio .left-xiaoliang .con-xiaosho  span{
+    color: #f0b43a;
+    font-weight: bold;
+    
+}
+.box .liebiao .left-liebio .left-xiaoliang li .paihan2{
+    background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan2.png);background-size: 100% 100%;
+   
+ }
+.box .liebiao .left-liebio .left-xiaoliang li .paihan3{
+    background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan3.png);background-size: 100% 100%;
+   
+ }
+.box .liebiao .left-liebio .left-xiaoliang li .paihan4{
+    background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan4.png);background-size: 100% 100%;
+   
+ }
+.box .liebiao .left-liebio .left-xiaoliang li .paihan5{
+    background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan5.png);background-size: 100% 100%;
+   
+ }
+.box .liebiao .left-liebio .left-xiaoliang li .paihan6{
+    background: url(	https://shop.xtep.com.cn/util/images/newsite/paihan6.png);background-size: 100% 100%;
+   
+ }
+ /* 右边列表页css样式 */
+ .box .liebiao .rigth-liebiao{
+    position: relative;
+    width: 966px;
+    margin-left: 20px;
+    background: #fff;
+    
+ }
+ .box .liebiao .rigth-liebiao .fenglai {
+    background-color: #fff;
+    margin-bottom: 1px;
+ }
+ .box .liebiao .rigth-liebiao .fenglai li{
+    padding: 10px;
+    /* overflow: hidden; */
+    zoom: 1;
+    height: 23px;
+    line-height: 26px;
+    float: left;
+ }
+ .box .liebiao .rigth-liebiao .fenglai li a{
+    line-height: 24px;
+    padding: 0 20px;
+    display: inline-block;
+    font-family: "微软雅黑";
+    color: #012925;
+    font-size: 12px;
+ }
+ .box .liebiao .rigth-liebiao .fenglai li .toggIcon{
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    background: url(	https://shop.xtep.com.cn/util/images/icon1.png) no-repeat center;
+    background-size: 100% 100%;
+    margin-left: -10px;
+ }
+ 
+ .box .liebiao .rigth-liebiao .fenglai .feng{
+    color: #999;
+    height: 100%;
+    background: #fafafa;
+    font-size: 14px;
+
+ }
+ .box .liebiao .rigth-liebiao .fenglai .rigth-erji{
+    position: absolute;
+    display: none;
+    z-index: 100;
+    text-align: center;
+    top: 42px;
+    left: 2px;
+    right: 2px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    -moz-box-shadow: 0 0 4px #ccc;
+    box-shadow: 0 0 4px #ccc;
+
+ }
+ .box .liebiao .rigth-liebiao .fenglai .rigth-erji a{
+ height: 45px;
+ line-height: 45px;
+
+ }
+ .box .liebiao .rigth-liebiao .fenglai a:hover{
+    color: red;
+ }
+ .box .liebiao .rigth-liebiao .fenglai .yangshi:hover .rigth-erji{
+    display: block;
+ }
+ .box .liebiao .rigth-liebiao .fenglai .yangshi:hover .toggIcon{
+    background: url(	https://shop.xtep.com.cn/util/images/icon2.png) no-repeat center;
+ }
+/* 列表详情 */
